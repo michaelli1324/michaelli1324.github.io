@@ -8,13 +8,17 @@
     background-color: #4B4B4B;
 }*/
 
-#nav-bar {
+body, html {
+    height: 100%;
+}
+
+#navbar {
     position: fixed;
     display: block;
+    top: 0px;
     height: 60px;
     width: 100%;
     text-align: center;
-    user-select: none;
     background-color: #4B4B4B;
 }
 
@@ -37,6 +41,14 @@
 
 .nav-item:last {
     border-right: none;
+}
+
+.bg-img {
+    background-image: url("../img/berkeley-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 #wrapper {
