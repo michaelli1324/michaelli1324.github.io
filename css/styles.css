@@ -110,11 +110,21 @@ label {
     display: block;
 }
 
+#social-media {
+  position: relative;
+}
+
 #social-media > a {
+    position: relative;
     color: white;
     margin: 10px;
     text-decoration: none;
     font-size: 1.2em;
+    box-shadow: 0 1px;
+}
+
+#social-media > a:hover {
+    bottom: 3px;
 }
 
 #contact-form {
