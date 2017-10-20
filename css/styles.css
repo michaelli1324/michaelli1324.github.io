@@ -45,6 +45,7 @@ label {
     letter-spacing: 1px;
     color: white;
     text-transform: uppercase;
+    transition: background-color 0.2s ease-in;
 }
 
 .nav-item:last {
@@ -63,8 +64,8 @@ label {
     display: block;
     width: 100%;
     height: 100vh;
-    text-align: center;
     margin-top: 60px;
+    text-align: center;
     background-color: rgb(238, 238, 238);
     padding: 0px;
 }
@@ -81,7 +82,9 @@ label {
     display: inline-block;
     margin: auto;
     text-align: center;
-    margin-top: 220px;
+    opacity: 0;
+    margin-top: 200px;
+    transition: all 0.7s ease-in;
 }
 
 #main-text > h2 {
@@ -116,15 +119,17 @@ label {
 
 #social-media > a {
     position: relative;
+    display: inline-block;
     color: white;
     margin: 10px;
     text-decoration: none;
     font-size: 1.2em;
-    box-shadow: 0 1px;
 }
 
 #social-media > a:hover {
-    bottom: 3px;
+    transform: translate(0, -7px);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 #contact-form {
@@ -162,6 +167,7 @@ label {
 
 .heading > h1 {
     font-size: 60px;
+    font-weight: 300;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
