@@ -19,6 +19,12 @@ label {
     margin-bottom: 5px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
 #navbar {
     position: fixed;
     display: block;
@@ -87,18 +93,14 @@ label {
     transition: all 0.7s ease-in;
 }
 
-#main-text > h2 {
-    width: auto;
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    color: white;
-    margin: auto;
-    padding: 15px 10px;
+#jumbo-display {
+  padding: 12px;
 }
 
-#main-text > h2 > span {
-    line-height: 50px;
-    margin: 5px;
+.jumbo-text {
+    width: auto;
+    margin: auto;
+    padding: 20px 20px 0px 25px;
 }
 
 #prof-pic {
@@ -115,21 +117,29 @@ label {
 
 #social-media {
   position: relative;
+  line-height: 50px;
+  margin: 10px 10px 0 10px;
 }
 
 #social-media > a {
     position: relative;
     display: inline-block;
     color: white;
-    margin: 10px;
+    margin: 5px 10px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 2.0em;
 }
 
 #social-media > a:hover {
     transform: translate(0, -7px);
     transition-duration: 0.5s;
     transition-timing-function: ease;
+}
+
+#social-media-text {
+    margin: 0;
+    font-size: 20px;
+    min-height: 22px;
 }
 
 #contact-form {
