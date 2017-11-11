@@ -1,2 +1,2 @@
-## [My Website](https://michaelli1324.github.io/)
-personal portfolio
+## [Website](http://www.michaelli.me/)
+personal website
