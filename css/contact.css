@@ -9,6 +9,10 @@ body {
     border: 1px solid #f7f7f9;
 }
 
+#thankyou_message {
+  margin-top: 15%;
+}
+
 .wrapper {
   height: 100vh;
 }
