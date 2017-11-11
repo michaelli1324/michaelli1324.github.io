@@ -16,8 +16,17 @@ $('.social-media-icon').hover(function() {
     $('#social-media-text').removeClass('animated fadeIn')
 })
 
-// $('#navbar').hover(function() {
-//     $(this).css("opacity", "0.8");
-// }, function() {
-//     $(this).css("opacity", "0.1");
-// })
+$(".project-item").on({
+    mouseover: function() {
+      $(".overlay", this).css("opacity", "0.8");
+      $(".overlay-title", this).css("opacity", "1.0");
+      $(".overlay-body", this).css("opacity", "1.0");
+      $("img", this).css("filter", "grayscale(100%)")
+    },
+    mouseout: function() {
+      $(".overlay", this).css("opacity", "0.0");
+      $(".overlay-title", this).css("opacity", "0.0");
+      $(".overlay-body", this).css("opacity", "0.0");
+      $("img", this).css("filter", "grayscale(0)")
+    }
+});

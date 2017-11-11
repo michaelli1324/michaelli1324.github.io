@@ -1,8 +1,16 @@
+body {
+  overflow-y: hidden;
+}
+
 /*-----------------------------------CONTACT PAGE STYLES-----------------------------------*/
 
 #contact-form {
-    padding: 2rem 8rem;
-    border: solid #f7f7f9;
+    margin: 2rem 8rem;
+    border: 1px solid #f7f7f9;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 .form-group {
@@ -14,7 +22,8 @@
 }
 
 .submit-button {
-  padding: 10px 30px;
+  margin-top: 20px;
+  padding: 10px 50px;
   border: none;
   font-weight: bold;
 }
