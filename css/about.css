@@ -1,3 +1,8 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 /*-----------------------------------ABOUT PAGE STYLES-----------------------------------*/
 
 #prof-pic {
@@ -35,3 +40,5 @@
     font-weight: 200;
     margin-top: 10px;
 }
+
+.main-content {}

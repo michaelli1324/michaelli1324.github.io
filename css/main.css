@@ -60,5 +60,5 @@ body {
     text-align: center;
     opacity: 0;
     margin-top: 190px;
-    transition: all 0.7s ease-in;
+    transition: transform 0.7s ease-in, opacity 0.7s ease-in;
 }
