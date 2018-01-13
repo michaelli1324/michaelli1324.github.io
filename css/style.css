@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*-----------------------------------PAGE STYLES-----------------------------------*/
 
-#prof-pic {
+.prof-pic {
     height: 200px;
     width: 200px;
     border: 3px solid black;
@@ -91,8 +91,25 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px auto;
 }
 
-#prof-block {
+.prof-block {
     display: block;
+}
+
+.heading {
+  cursor: default;
+}
+
+.heading > h1 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.heading > h3 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 10px;
 }
 
 .link {
@@ -148,18 +165,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #aaa;
 }
 
-.heading > h1 {
-    font-size: 60px;
-    font-weight: 300;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.heading > h3 {
-    font-size: 30px;
-    font-weight: 200;
-    margin-top: 10px;
-}
 
 .link-set {
     font-family: "Raleway", sans-serif;
