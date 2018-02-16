@@ -37,9 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
   display: flex;
   flex-direction: column;
-  max-width: 680px;
+  max-width: 800px;
   margin: auto;
   padding: 0 20px;
+}
+
+.limited {
+  max-width: 680px;
 }
 
 .prof-block {
@@ -73,15 +77,54 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
 }
 
-.link {
-  color: #68A4F2;
+.link-set a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 4px;
+  color: black;
+  margin: 0 15px;
+  opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.link:hover{
-  color: #297eed;
-  text-decoration: none;
+.link-set a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.link-set .active:hover {
+  cursor: default;
+}
+
+.link-set .active {
+  color: #68A4F2;
+  border-bottom: 1px solid;
+  opacity: 1;
+}
+
+.link-set > a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  bottom: 0;
+  left: 10%;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link-set > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.link-set > .active:hover:before {
+  visibility: hidden;
 }
 
 .description {
@@ -120,29 +163,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
 }
 
-.link-set a {
-  text-decoration: none;
-  padding-bottom: 4px;
-  color: black;
-  margin: 0 15px;
-  opacity: 0.5;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.link-set a:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
-.link-set .active {
-  color: #68A4F2;
-  border-bottom: 1px solid;
-  opacity: 1;
-}
 
 .projects {
   text-align: left;
+}
+
+.project-item {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-content {
@@ -151,13 +180,42 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+.project-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.project-img {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-img.top:hover {
+  opacity: 0;
+}
+
+.project-img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid grey;
+}
+
+.project-text {
+  margin-right: 50px;
+}
+
 .project-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
-}
-
-.project-item {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .first {
