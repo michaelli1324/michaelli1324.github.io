@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import About from './About'
 import Links from './Links'
 
+import './style.scss';
+
 class Sidebar extends Component {
   render () {
     return (
