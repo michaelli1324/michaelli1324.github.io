@@ -1,79 +1,43 @@
 @import '../main.scss';
 
-.main {
-  margin: 0 auto;
-  min-height: 100vh;
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  .home {
-    &-title {
-      font-size: 3.4rem;
-      line-height: 1.6;
-      text-align: center;
+  &-title {
+    @extend .Heading;
+    @extend .Heading--h3;
+    font-size: 3.4rem;
+    line-height: 1.6;
+    text-align: center;
 
-      @include media('<=xsmall') {
-        font-size: 2.8rem;
-      }
-
-      @include media('>=medium', '<large') {
-        font-size: 3rem;
-      }
+    @include media('<=xsmall') {
+      font-size: 2.8rem;
     }
 
-    &-description {
-      line-height: 1.5;
-      letter-spacing: -0.05rem;
-      text-align: center;
-    }
-
-    &-descriptionLink {
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
+    @include media('>=medium', '<large') {
+      font-size: 3rem;
     }
   }
 
-  // Setting the width and padding sizes
-  @include media('>=large') {
-    $main-width: 70%;
-    $main-margin-left: 30%;
-    $vertical-padding: 50px;
-    $horizontal-padding: 10%;
-
-    width: $main-width;
-    margin-left: $main-margin-left;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  &-name
+  {
+    font-weight: $font-weight-bold;
   }
-  @include media('>=medium', '<large') {
-    $main-width: 70%;
-    $main-margin-left: 30%;
-    $vertical-padding: 50px;
-    $horizontal-padding: 10%;
 
-    width: $main-width;
-    margin-left: $main-margin-left;
-    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  &-description {
+    @extend .Heading;
+    @extend .Heading--h4;
+
+    line-height: 1.5;
+    letter-spacing: -0.05rem;
+    text-align: center;
   }
-  @include media('>xsmall', '<medium') {
-    $main-width: 100%;
-    $main-margin-left: 0;
-    $vertical-padding: 50px;
-    $horizontal-padding: 48px;
 
-    width: $main-width;
-    margin-left: $main-margin-left;
-    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
-  }
-  @include media('<=xsmall') {
-    $main-width: 100%;
-    $main-margin-left: 0;
-    $vertical-padding: 50px;
-    $horizontal-padding: 24px;
-
-    width: $main-width;
-    margin-left: $main-margin-left;
-    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  &-descriptionLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
   }
 }

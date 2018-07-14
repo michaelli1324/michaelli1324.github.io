@@ -4,12 +4,11 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Sidebar from '../components/Sidebar'
 
-import './style.scss'
+import '../assets/scss/main.scss';
 
 import profileImage from '../assets/images/michael.jpg'
 import favicon16 from '../assets/favicons/favicon-16x16.png'
 import favicon32 from '../assets/favicons/favicon-32x32.png'
-import animations from '../assets/external/animate.css'
 
 class TemplateWrapper extends React.Component {
   render () {
@@ -25,6 +24,7 @@ class TemplateWrapper extends React.Component {
         <Helmet
           title={siteTitle}
           meta={[
+            { name: 'viewport', content: 'width=device-width, initial-scale=1'},
             { name: 'description', content: siteDescription },
             { name: 'keywords', content: siteKeywords },
             { property: 'og:url', content: siteURL },

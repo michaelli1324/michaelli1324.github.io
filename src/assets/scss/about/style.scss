@@ -1,0 +1,12 @@
+@import '../main.scss';
+
+.about
+{
+  &-heading
+  {
+    @extend .Heading;
+    @extend .Heading--h2;
+
+    font-weight: $font-weight-bold;
+  }
+}
