@@ -16,11 +16,6 @@ $margin-bottom: 40px;
     background-position: center center;
     border-radius: 50%;
     overflow: hidden;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); /* For Webkit browsers */
-    filter: gray; /* For IE 6 - 9 */
-    transition: all .6s ease;
-    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
     margin-bottom: $margin-bottom;
 
     &:hover {

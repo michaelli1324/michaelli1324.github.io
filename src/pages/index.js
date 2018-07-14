@@ -1,37 +1,22 @@
 import React from 'react'
-import ExperienceSection from '../components/ExperienceSection'
-import ProjectsSection from '../components/ProjectsSection'
-import About from '../components/Sidebar/About'
-import Links from '../components/Sidebar/Links'
 
-import './style.scss'
+import '../assets/scss/home/style.scss'
 
 const IndexPage = () => (
-    <div className="index">
-      <div className="aside">
-        <div className="top">
-          <About />
-        </div>
-        <div className="bottom">
-          <Links />
-        </div>
-      </div>
+  <div className="main">
+    <h3 className="home-title">
+      Hi, I'm <span className="bold">Michael Li</span>
+    </h3>
 
-      <div className="main">
-        <h5>
-          Hi, I'm <span className="bold">Praagya Joshi</span>
-        </h5>
-
-        <h3 className="bold">
-          Full stack product engineer with 3 years experience building products
-          for with a leading food tech company, an early stage fitness start up
-          and a leading SaaS provider.
-        </h3>
-
-        <ExperienceSection />
-        <ProjectsSection />
-      </div>
-    </div>
+    <h4 className="home-description">
+      I am currently a student at UC Berkeley studying Electrical Engineering Computer Science (EECS) and
+      Business Administration. Additionally, I am a member of the inaugural class in the&nbsp;
+      <a className="home-descriptionLink" href="http://met.berkeley.edu/">
+        Management, Entrepreneurship, & Technology Program
+      </a>
+      &nbsp;here, a collaborative effort between Berkeley's College of Engineering and Haas School of Business.
+    </h4>
+  </div>
 )
 
 export default IndexPage

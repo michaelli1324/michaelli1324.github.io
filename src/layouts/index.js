@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
+import Sidebar from '../components/Sidebar'
 
 import './style.scss'
 
@@ -36,6 +37,8 @@ class TemplateWrapper extends React.Component {
           ]}
         />
         <div className="template-wrapper-children">
+          <Sidebar />
+
           { children() }
         </div>
       </div>

@@ -1,0 +1,71 @@
+@import '../main.scss';
+
+.main {
+  margin: 0 auto;
+
+  .home {
+    &-title {
+      font-size: 3.4rem;
+      line-height: 1.6;
+
+      @include media('<=xsmall') {
+        font-size: 2.8rem;
+      }
+
+      @include media('>=medium', '<large') {
+        font-size: 3rem;
+      }
+    }
+
+    &-description {
+      line-height: 1.5;
+      letter-spacing: -0.08rem;
+    }
+
+    &-descriptionLink::before {
+      white-space: pre;
+    }
+  }
+
+  // Setting the width and padding sizes
+  @include media('>=large') {
+    $main-width: 70%;
+    $main-margin-left: 30%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 10%;
+
+    width: $main-width;
+    margin-left: $main-margin-left;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>=medium', '<large') {
+    $main-width: 70%;
+    $main-margin-left: 30%;
+    $vertical-padding: 50px;
+    $horizontal-padding: 10%;
+
+    width: $main-width;
+    margin-left: $main-margin-left;
+    padding: $vertical-padding $horizontal-padding $vertical-padding $horizontal-padding;
+  }
+  @include media('>xsmall', '<medium') {
+    $main-width: 100%;
+    $main-margin-left: 0;
+    $vertical-padding: 50px;
+    $horizontal-padding: 48px;
+
+    width: $main-width;
+    margin-left: $main-margin-left;
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+  @include media('<=xsmall') {
+    $main-width: 100%;
+    $main-margin-left: 0;
+    $vertical-padding: 50px;
+    $horizontal-padding: 24px;
+
+    width: $main-width;
+    margin-left: $main-margin-left;
+    padding: $vertical-padding $horizontal-padding 0 $horizontal-padding;
+  }
+}
