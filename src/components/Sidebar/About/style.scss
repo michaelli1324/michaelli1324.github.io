@@ -29,42 +29,54 @@ $margin-bottom: 40px;
     }
   }
 
-  .bio {
-    margin-bottom: $margin-bottom;
-    max-width: $max-width;
-    line-height: 2.8rem;
-    font-size: 1.8rem;
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
 
-    .emoji {
-      font-size: 1.6rem;
-      padding-top: 30px;
+    &-item
+    {
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+      transition: all 0.8s ease;
 
-      @include media("retina2x") {
-        font-size: 2.2rem;
+      &:not(:last-child)
+      {
+        border-bottom: 1px solid;
+      }
+
+      &:hover
+      {
+        background-color: white;
+        color: black;
       }
     }
   }
 
-  @include media('>small', '<=medium') {
-    .bio {
-      .emoji {
-        font-size: 2.0rem;
-        padding-top: 10px;
-      }
-    }
-  }
-
-  @include media('<=small') {
-    .bio {
-      line-height: 2.0rem;
-      font-size: 1.4rem;
-
-      .emoji {
-        font-size: 1.8rem;
-        padding-top: 10px;
-      }
-    }
-  }
+  // @include media('>small', '<=medium') {
+  //   .bio {
+  //     .emoji {
+  //       font-size: 2.0rem;
+  //       padding-top: 10px;
+  //     }
+  //   }
+  // }
+  //
+  // @include media('<=small') {
+  //   .bio {
+  //     line-height: 2.0rem;
+  //     font-size: 1.4rem;
+  //
+  //     .emoji {
+  //       font-size: 1.8rem;
+  //       padding-top: 10px;
+  //     }
+  //   }
+  // }
 
   @include media('<=medium') {
     text-align: center;

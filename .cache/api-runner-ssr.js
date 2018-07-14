@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[],"fonts":["open sans:300,600"]},
     },{
       plugin: require('/Users/mili/other/michaelli1324.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"<your-tracking-id-here>","head":true},
+      options: {"plugins":[],"trackingId":"UA-122310612-1","head":true},
     },{
       plugin: require('/Users/mili/other/michaelli1324.github.io/gatsby-ssr'),
       options: {"plugins":[]},

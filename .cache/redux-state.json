@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1353f2a9adb2bddfb42ec89bfa0ab404",
+        "contentDigest": "1aa8b7eb36cefb2c21192b5103367ed2",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -334,7 +334,7 @@
       "version": "1.0.31",
       "pluginOptions": {
         "plugins": [],
-        "trackingId": "<your-tracking-id-here>",
+        "trackingId": "UA-122310612-1",
         "head": true
       },
       "nodeAPIs": [],
@@ -385,7 +385,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "bf54fec0d647206738cd1cd1e5b65628",
+        "contentDigest": "ecaf880cad4f6c7120a8ac9240c809fb",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -394,7 +394,7 @@
       "resolve": "/Users/mili/other/michaelli1324.github.io",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "3b44df116a0a1f55169c7257500e8564",
+      "version": "7e9c82cdd1745e1a1348e3ddcec33e9b",
       "pluginOptions": {
         "plugins": []
       },
@@ -460,7 +460,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "24db60c922059254fa838390171ccd3c",
+        "contentDigest": "69a97cc999a62829076502991d1c5add",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -546,19 +546,21 @@
     },
     "Site": {
       "siteMetadata": {
-        "title": "Michael",
+        "title": "Michael Li",
         "description": "Technology Innovator, Software Developer, Lifelong Learner",
         "keywords": "software development, web development, software engineer, portfolio, personal website",
         "url": "https://www.michaelli.me"
       },
       "port": "8000",
       "host": "localhost",
-      "buildTime": "2018-07-14T16:36:35.109Z",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-07-14T19:40:07.686Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "89110a8a1e9d8d8b302c951a644f8b1c",
+        "contentDigest": "80a377eeab9042fb34b508704c070d39",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -579,7 +581,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f7a61e768f81e3585854a2e9ef26459a",
+        "contentDigest": "3786b4f49ad5627df3a243a8395994a2",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -587,7 +589,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "8689beb17528d42dfe019cc6c35c74b9"
+    "PLUGINS_HASH": "8e8cadde5442828751f88cf68418c7f0"
   },
   "componentDataDependencies": {
     "nodes": {

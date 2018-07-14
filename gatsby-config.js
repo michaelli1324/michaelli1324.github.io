@@ -12,13 +12,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "<your-tracking-id-here>",
+        trackingId: "UA-122310612-1",
         head: true
       }
     },
   ],
   siteMetadata: {
-    title: 'Michael',
+    title: 'Michael Li',
     description: 'Technology Innovator, Software Developer, Lifelong Learner',
     keywords: 'software development, web development, software engineer, portfolio, personal website',
     url: 'https://www.michaelli.me'

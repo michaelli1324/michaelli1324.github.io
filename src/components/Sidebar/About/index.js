@@ -8,12 +8,11 @@ class About extends Component {
       <div className="about">
         <div className="image">
         </div>
-        <div className="bio">
-          A technology enthusiast &amp; certified scuba diver, who loves travelling, paints occasionally
-          and follows football ardently.
-          <div className="emoji">
-            🤖 &nbsp;🏔&nbsp;🎨&nbsp; ⚽️
-          </div>
+        <div className="navbar">
+          <a className="navbar-item" href="#">About</a>
+          <a className="navbar-item" href="#">Projects</a>
+          <a className="navbar-item" href="#">Resume</a>
+          <a className="navbar-item" href="#">Contact</a>
         </div>
       </div>
     )
