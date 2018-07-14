@@ -9,6 +9,7 @@ import './style.scss'
 import profileImage from '../assets/images/michael.jpg'
 import favicon16 from '../assets/favicons/favicon-16x16.png'
 import favicon32 from '../assets/favicons/favicon-32x32.png'
+import animations from '../assets/external/animate.css'
 
 class TemplateWrapper extends React.Component {
   render () {
@@ -33,7 +34,7 @@ class TemplateWrapper extends React.Component {
           ]}
           link={[
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: favicon16 },
-            { rel: 'icon', type: 'image/png', sizes: '32x32', href: favicon32 }
+            { rel: 'icon', type: 'image/png', sizes: '32x32', href: favicon32 },
           ]}
         />
         <div className="template-wrapper-children">
