@@ -5,7 +5,7 @@ import ProjectsSection from '../components/ProjectsSection'
 import '../assets/scss/work/style.scss'
 
 const WorkPage = () => (
-  <div className="work container">
+  <div className="work container animated fadeIn">
 
     <h1 className="work-projectsHeading">Experience</h1>
     <ExperienceSection />

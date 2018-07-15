@@ -36,7 +36,11 @@ class TemplateWrapper extends React.Component {
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: favicon16 },
             { rel: 'icon', type: 'image/png', sizes: '32x32', href: favicon32 },
           ]}
-        />
+        >
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+            integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+            crossorigin="anonymous" />
+        </Helmet>
         <div className="template-wrapper-children">
           <Sidebar />
 

@@ -3,7 +3,7 @@ import React from 'react'
 import '../assets/scss/home/style.scss'
 
 const IndexPage = () => (
-  <div className="home container">
+  <div className="home container animated fadeIn">
     <h1 className="home-title">
       Hi, I'm <span className="home-name">Michael Li</span>
     </h1>
