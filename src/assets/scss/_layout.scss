@@ -133,8 +133,8 @@
   @include media('>=large') {
     $container-width: 70%;
     $container-margin-left: 30%;
-    $vertical-padding: 50px;
-    $horizontal-padding: 10%;
+    $vertical-padding: 70px;
+    $horizontal-padding: 8%;
 
     width: $container-width;
     margin-left: $container-margin-left;

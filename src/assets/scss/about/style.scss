@@ -9,4 +9,18 @@
 
     font-weight: $font-weight-bold;
   }
+
+  &-description {
+    @extend .Heading;
+    @extend .Heading--h4;
+
+    line-height: 2;
+    letter-spacing: -0.05rem;
+  }
+
+  // &-emojis {
+  //   white-space: pre;
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }
