@@ -10,7 +10,7 @@ class Navbar extends Component {
         <Link className="navbar-item" to="/about">About</Link>
         <Link className="navbar-item" to="/projects">Work</Link>
         <a className="navbar-item" href={resume}>Resume</a>
-        <Link className="navbar-item" to="#">Contact</Link>
+        <Link className="navbar-item" to="/contact">Contact</Link>
       </div>
     )
   }

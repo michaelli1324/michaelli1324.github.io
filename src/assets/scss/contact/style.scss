@@ -1,0 +1,30 @@
+@import '../main.scss';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-item {
+    @extend .Heading;
+    @extend .Heading--h3;
+    font-size: 3rem;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+
+    @include media('<=xsmall') {
+      font-size: 2.4rem;
+    }
+
+    @include media('>=medium', '<large') {
+      font-size: 2.8rem;
+    }
+  }
+}
