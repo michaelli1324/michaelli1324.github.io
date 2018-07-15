@@ -38,7 +38,7 @@ class TemplateWrapper extends React.Component {
           link={[
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: favicon16 },
             { rel: 'icon', type: 'image/png', sizes: '32x32', href: favicon32 },
-            { rel: 'stylesheet', integrity: sha, href: cdn, crossorigin: 'anonymous' },
+            { rel: 'stylesheet', integrity: sha, href: cdn, crossOrigin: 'anonymous' },
           ]}
         />
         <div className="template-wrapper-children">
