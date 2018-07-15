@@ -9,6 +9,9 @@ import '../assets/scss/main.scss';
 import profileImage from '../assets/images/michael.jpg'
 import favicon16 from '../assets/favicons/favicon-16x16.png'
 import favicon32 from '../assets/favicons/favicon-32x32.png'
+let cdn = 'https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css'
+let sha = 'sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw'
+
 
 class TemplateWrapper extends React.Component {
   render () {
@@ -35,12 +38,9 @@ class TemplateWrapper extends React.Component {
           link={[
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: favicon16 },
             { rel: 'icon', type: 'image/png', sizes: '32x32', href: favicon32 },
+            { rel: 'stylesheet', integrity: sha, href: cdn, crossorigin: 'anonymous' },
           ]}
-        >
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-            integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-            crossorigin="anonymous" />
-        </Helmet>
+        />
         <div className="template-wrapper-children">
           <Sidebar />
 
