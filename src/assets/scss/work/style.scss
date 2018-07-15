@@ -1,0 +1,13 @@
+@import '../main.scss';
+
+.work
+{
+  &-projectsHeading
+  {
+    @extend .Heading;
+    @extend .Heading--h2;
+
+    margin: 0;
+    font-weight: $font-weight-bold;
+  }
+}

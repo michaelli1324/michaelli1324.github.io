@@ -2,42 +2,36 @@ import React from 'react'
 import Section from '../Section'
 import ExperienceUnit from '../ExperienceUnit'
 
-import zomatoLogo from '../../assets/images/experience/zomato-logo.svg'
-import fitsoLogo from '../../assets/images/experience/fitso-logo.jpg'
-import kayakoLogo from '../../assets/images/experience/kayako-logo-2.jpg'
+import berkeleyTime from '../../assets/images/experience/berkeleytime.png'
+import yext from '../../assets/images/experience/yext.png'
 
 class ExperienceSection extends React.Component {
   render() {
     return (
-      <Section title="Experience">
+      <Section>
         <div className="row">
           <ExperienceUnit
-            logo={zomatoLogo}
-            colour='#CB202D'
-            title='Zomato'
-            link='https://www.zomato.com/'
-            timeperiod='2014 - 2015'
-            subtitle='Learnt the ins and outs of product development and
-              built various features including a completely new product.'
-          />
-          <ExperienceUnit
-            logo={fitsoLogo}
+            logo={yext}
             colour='#FFFFFF'
-            title='Fitso'
-            link='https://www.getfitso.com/'
-            timeperiod='2016'
-            subtitle='Built real time GPS tracking on the iOS app,
-              all consumer facing web modules and external APIs in
-              this early stage startup.'
+            title='Yext'
+            role="Software Engineering Intern"
+            link='https://www.yext.com/'
+            timeperiod='Summer 2018'
+            subtitle='Work with consulting team to build custom pages
+              with optimized content to drive search traffic.
+              and increase customer engagement'
           />
+
           <ExperienceUnit
-            logo={kayakoLogo}
-            colour='#403949'
-            title='Kayako'
-            link='https://www.kayako.com/'
-            timeperiod='2017 - 2018'
-            subtitle='Worked as a Product Engineer on email processing,
-              push notifications, SLAs amongst other things.'
+            logo={berkeleyTime}
+            colour='#5BB1E0'
+            title='BerkeleyTime'
+            link='https://www.berkeleytime.com/'
+            role='Full Stack Engineer'
+            timeperiod='2017 - '
+            subtitle='Develop new features on the course discovery
+              web application, allowing students to better
+              navigate course enrollment on campus'
           />
         </div>
       </Section>

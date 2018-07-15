@@ -18,6 +18,11 @@ class ExperienceUnit extends Component {
         <div className="title bold">
           {this.props.title}
         </div>
+        {this.props.role &&
+          <div className="role">
+            {this.props.role}
+          </div>
+        }
         <div className="time-period">
           {this.props.timeperiod}
         </div>

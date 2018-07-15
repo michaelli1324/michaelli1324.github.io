@@ -18,10 +18,16 @@
       box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3);
     }
   }
-  
+
   .title {
     padding: 8px 0px;
     font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+    line-height: 0.9rem;
+    padding-bottom: 12px;
   }
 
   .time-period {
@@ -35,7 +41,9 @@
     font-size: 1.4rem;
   }
 
-  @include media('>=medium', '<large') {
+  @include media('>=medium') {
+    padding: 25px 0;
+
     .image {
       height: 110px;
     }
@@ -43,7 +51,7 @@
 
   @include media('<=medium', '>xsmall') {
     padding-bottom: 15px;
-    
+
     .image {
       height: 140px;
     }
