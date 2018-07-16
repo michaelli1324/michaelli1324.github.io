@@ -10,7 +10,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b build"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "flexboxgrid": "^6.3.1",
