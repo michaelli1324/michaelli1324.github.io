@@ -9,8 +9,8 @@ class Navbar extends Component {
       <div className="navbar">
         <Link className="navbar-item" to="/about">About</Link>
         <Link className="navbar-item" to="/projects">Work</Link>
-        <a className="navbar-item" href={resume}>Resume</a>
         <Link className="navbar-item" to="/contact">Contact</Link>
+        <a className="navbar-item" href={resume}>Resume</a>
       </div>
     )
   }

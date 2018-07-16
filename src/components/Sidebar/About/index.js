@@ -4,12 +4,14 @@ import Navbar from '../../Navbar'
 
 import './style.scss'
 
+import profImg from '../../../assets/images/michael.jpg'
+
 class About extends Component {
   render () {
     return (
       <div className="about">
         <Link to="/">
-          <div className="image"></div>
+          <img className="image animated fadeIn" src={profImg}/>
         </Link>
 
         <Navbar />
