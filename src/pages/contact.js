@@ -8,10 +8,10 @@ const ContactPage = () => (
       <a className="contact-item" href="mailto:michael.li@berkeley.edu">
         michael.li@berkeley.edu
       </a>
-      <a className="contact-item" href="">
+      <a className="contact-item" href="https://github.com/michaelli1324" target="_blank">
         github
       </a>
-      <a className="contact-item" href="">
+      <a className="contact-item" href="https://www.linkedin.com/in/michael-li1/" target="_blank">
         linkedIn
       </a>
     </div>
